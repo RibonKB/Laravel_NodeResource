@@ -1,0 +1,23 @@
+{
+    "name": "kelnebenath/laravel-noderesource",
+    "description": "A tree based organization schema for enterprise multi-company applications",
+    "keywords": ["multi-company", "erp", "crm", "tree", "jerarquized", "node"],
+    "homepage": "https://www.github.com/RibonKB/Laravel_NodeResource",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Tomás Lara",
+        "email": "sir.thomas.lara@gmail.com",
+        "homepage": "https://www.githug.com/RibonKB",
+        "role": "Software Developer"
+      }
+    ],
+    "require": {
+      "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "KelneBenath\\NodeResource\\": "src/"
+        }
+    },
+}

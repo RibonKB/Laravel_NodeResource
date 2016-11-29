@@ -1,0 +1,38 @@
+.node-drawer-header {
+  border-bottom: 1px solid #222;
+}
+
+.node-profile{
+  margin: 8px 5px;
+}
+#node-user-photo{
+  border-radius: 40px;
+  border: 2px solid #FFF;
+}
+
+.node-no-display {
+  display: none;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  padding: 8px 20px;
+}
+
+.mdl-navigation__link .material-icons {
+  margin-right: 4px;
+}
+
+.node-nav-menu{
+  margin: 2px 3px;
+}
+
+.node-dashboard--card{
+    margin:10px 5px;
+}
+
+.node-dashboard--card > .mdl-card__title {
+  color: #fff;
+  height: 70px;
+  background: url('/vendor/kelnebenath/noderesource/images/node-logo-full.jpg') right no-repeat #065695;
+  text-align: left;
+}
