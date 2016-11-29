@@ -14,7 +14,7 @@
   </div>
 </div>
 <nav class="node-nav-menu mdl-navigation">
-  <a href="/home" class="mdl-navigation__link"><i class="material-icons" role="presentation">home</i>Dashboard</a>
-  <a href="#" class="mdl-navigation__link"><i class="material-icons" role="presentation">linear_scale</i>Nodify</a>
-  <a href="#" class="mdl-navigation__link"><i class="material-icons" role="presentation">extension</i>Modularize</a>
+  <a href="{{route('nr_dashboard')}}" class="mdl-navigation__link"><i class="material-icons" role="presentation">home</i>Dashboard</a>
+  <a href="{{route('nr_nodify')}}" class="mdl-navigation__link"><i class="material-icons" role="presentation">linear_scale</i>Nodify</a>
+  <a href="{{route('nr_modularize')}}" class="mdl-navigation__link"><i class="material-icons" role="presentation">extension</i>Modularize</a>
 </nav>
