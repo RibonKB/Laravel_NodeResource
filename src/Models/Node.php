@@ -12,5 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Node extends Model
 {
-    //
+    public function info(){
+        return $this->hasOne('KelneBenath\NodeResource\Models\NodeInfo');
+    }
 }

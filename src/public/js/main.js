@@ -4,3 +4,6 @@
  *
  * Author: Tomás Lara (RibonKB)
  */
+ document.getElementById('node-logout-btn').addEventListener('click',function(){
+     var form = document.getElementById('node-logout-form').submit();
+ });

@@ -1,3 +1,7 @@
+body{
+    background-color: #EEE;
+}
+
 .node-drawer-header {
   border-bottom: 1px solid #222;
 }
@@ -31,8 +35,20 @@
 }
 
 .node-dashboard--card > .mdl-card__title {
-  color: #fff;
   height: 70px;
-  background: url('/vendor/kelnebenath/noderesource/images/node-logo-full.jpg') right no-repeat #065695;
+  background: url('/vendor/kelnebenath/noderesource/images/node-logo-full.jpg') right no-repeat;
   text-align: left;
+}
+
+.mdl-card__title {
+    color: #fff;
+    background-color: #065695 !important;
+}
+
+.mdl-card__menu {
+    top:10px;
+}
+
+.node-justify {
+    text-align: justify;
 }

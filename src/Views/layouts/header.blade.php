@@ -1,7 +1,7 @@
 <header class="mdl-layout__header mdl-shadow--4dp">
   <img src="/images/node-resource-login.jpg" class="mdl-layout-icon"></img>
   <div class="mdl-layout__header-row">
-    <span class="mdl-layout__title">NODE Resource Administration Center</span>
+    <span class="mdl-layout__title">NODE RAC</span>
     <div class="mdl-layout-spacer"></div>
     <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
       <i class="material-icons">more_vert</i>

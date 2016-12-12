@@ -12,6 +12,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class NodeInfo extends Model
 {
+    protected $table = 'node_info';
+
     public function node(){
         return $this->belongsTo('KelneBenath\NodeResource\Models\Node');
     }

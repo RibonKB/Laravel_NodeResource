@@ -21,10 +21,12 @@ class CreateNodesTable extends Migration
     {
         Schema::create('nodes', function (Blueprint $table) {
             $table->increments('id');
-            $table->foreign('distribution_parent_id')->references('id')->on('nodes')->nullable();
-            $table->foreign('organization_parent_id')->references('id')->on('nodes')->nullable();
-            $table->boolean('organizable');
-            $table->boolean('leaf');
+
+            $table->integer('parent_id')->unsigned()->nullable();
+            $table->foreign('parent_id')->references('id')->on('nodes');
+            $table->string('name');
+            $table->text('description');
+            $table->boolean('is_organizable');
             $table->timestamps();
         });
     }

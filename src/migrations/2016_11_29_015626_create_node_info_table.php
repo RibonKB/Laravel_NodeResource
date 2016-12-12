@@ -21,9 +21,10 @@ class CreateNodeInfoTable extends Migration
     {
         Schema::create('node_info', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('node_id')->unsigned();
             $table->foreign('node_id')->references('id')->on('nodes');
-            $table->string('name');
-            $table->text('description');
+            $table->text('employ_description');
+            $table->boolean('is_leaf');
             $table->timestamps();
         });
     }

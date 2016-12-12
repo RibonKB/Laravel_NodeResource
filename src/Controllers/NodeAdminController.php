@@ -11,6 +11,7 @@ namespace KelneBenath\NodeResource\Controllers;
 use App\Http\Controllers\Controller;
 
 class NodeAdminController extends Controller{
+
     public function index(){
         return view('nrviews::dashboard');
     }
