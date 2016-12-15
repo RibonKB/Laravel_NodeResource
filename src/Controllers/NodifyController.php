@@ -48,9 +48,15 @@ class NodifyController extends Controller
         $info->employ_description = $request->nr_node_employ;
         $info->is_leaf = true;
 
-        \DB::transaction(function () use($node, $info){
+        $parent = Node::with('info')->find($request->nr_parent_id);
+
+        \DB::transaction(function () use($node, $info, $parent){
             $node->save();
             $node->info()->save($info);
+            if($parent->info->is_leaf == true){
+                $parent->info->is_leaf = false;
+                $parent->info->save();
+            }
         });
 
         return redirect()->route('nr_node');
