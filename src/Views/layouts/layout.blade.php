@@ -19,6 +19,7 @@
 
     <!-- Scripts -->
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 @yield('head-scripts')
 </head>
 <body>

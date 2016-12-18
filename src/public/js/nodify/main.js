@@ -1,4 +1,4 @@
-var nr = {
+var nr_node_new = {
     el: {
 
     },
@@ -6,4 +6,4 @@ var nr = {
 
     }
 };
-nr.init();
+nr_node_new.init();

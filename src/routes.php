@@ -17,5 +17,18 @@ Route::group(['prefix' => 'nradmin', 'namespace' => 'KelneBenath\NodeResource\Co
     Route::put('/nodes/{id}','NodifyController@update')->name('nr_node_update');
     Route::delete('/nodes/{id}','NodifyController@destroy')->name('nr_node_destroy');
 
+    //Distribution Node CRUD routes
+    Route::get('/dnodes','DistributeController@index')->name('nr_dnode');
+    Route::get('/dnodes/new','DistributeController@newNode')->name('nr_dnode_new');
+    Route::post('/dnodes','DistributeController@create')->name('nr_dnode_create');
+    Route::get('/dnodes/{id}/edit','DistributeController@edit')->name('nr_dnode_edit');
+    Route::put('/dnodes/{id}','DistributeController@update')->name('nr_dnode_update');
+    Route::delete('/dnodes/{id}','DistributeController@destroy')->name('nr_dnode_destroy');
+
     Route::get('/modularize',function(){return "Hello World!";})->name('nr_modularize');
+
+    Route::group(['prefix' => 'api', 'namespace' => 'Api'], function(){
+        Route::get('/nodes','NodeController@index')->name('nr_api_node');
+    });
+
 });
