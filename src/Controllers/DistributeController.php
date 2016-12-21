@@ -27,13 +27,20 @@ class DistributeController extends Controller
      * Store created distribution node
     */
     public function create(StoreDNode $request){
+
         $node = new Node();
         $node->parent_id = $request->nr_parent_id;
         $node->name = $request->nr_dnode_name;
         $node->description = $request->nr_dnode_description;
         $node->is_organizable = false;
 
-        $node->save();
+        \DB::transaction(function() use ($node, $request){
+            $node->save();
+
+            foreach($request->nr_dnode_related as $related_id){
+                $node->distribution()->attach($related_id);
+            }
+        });
 
         return redirect()->route('nr_dnode');
     }

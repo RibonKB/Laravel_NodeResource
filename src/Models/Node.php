@@ -15,4 +15,12 @@ class Node extends Model
     public function info(){
         return $this->hasOne('KelneBenath\NodeResource\Models\NodeInfo');
     }
+
+    public function distribution(){
+        return $this->belongsToMany(
+            Node::class, 'distribution',
+            'distribution_node_id',
+            'organizational_node_id'
+        )->withTimestamps();
+    }
 }
