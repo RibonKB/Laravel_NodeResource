@@ -13,7 +13,11 @@
       }
     ],
     "require": {
-      "php": ">=5.4"
+      "php": ">=5.4",
+      "illuminate/database": "*",
+      "illuminate/routing": "*",
+      "illuminate/console": "*",
+      "illuminate/config": "*"
     },
     "autoload": {
         "psr-4": {
